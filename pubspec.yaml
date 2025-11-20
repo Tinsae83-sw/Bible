@@ -1,0 +1,61 @@
+name: Amharic_bible
+description: A Holy Bible app with Amharic support
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.5
+  shared_preferences: ^2.2.2
+  http: ^1.1.0
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  share_plus: ^7.2.1
+  url_launcher: ^6.2.2
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/books/
+    - assets/bible_data/
+    - assets/images/
+    - assets/fonts/Roboto/Roboto-Regular.ttf
+    - assets/fonts/Roboto/Roboto-Italic.ttf
+    - assets/fonts/Roboto/Roboto-Bold.ttf
+    - assets/fonts/Roboto/Roboto-BoldItalic.ttf
+    - assets/fonts/AbyssinicaSIL/AbyssinicaSIL-R.ttf
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto/Roboto-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/Roboto/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto/Roboto-BoldItalic.ttf
+          weight: 700
+          style: italic
+    - family: AbyssinicaSIL
+      fonts:
+        - asset: assets/fonts/AbyssinicaSIL/AbyssinicaSIL-R.ttf
